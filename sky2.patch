@@ -1,0 +1,12 @@
+diff --git a/drivers/net/ethernet/marvell/sky2.c b/drivers/net/ethernet/marvell/sky2.c
+index 697d9b374..6a7925d29 100644
+--- a/drivers/net/ethernet/marvell/sky2.c
++++ b/drivers/net/ethernet/marvell/sky2.c
+@@ -4441,6 +4441,7 @@ static const struct ethtool_ops sky2_ethtool_ops = {
+ 	.get_ethtool_stats = sky2_get_ethtool_stats,
+ 	.get_link_ksettings = sky2_get_link_ksettings,
+ 	.set_link_ksettings = sky2_set_link_ksettings,
++	.get_ts_info	= ethtool_op_get_ts_info,
+ };
+ 
+ #ifdef CONFIG_SKY2_DEBUG
